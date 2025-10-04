@@ -63,7 +63,16 @@ function FlowEditor() {
   };
 
   const onConnect = useCallback(
-    (params) =>
+    (params) => {
+      const existingEdge = edges.find(
+        (e) =>
+          e.source === params.source && e.sourceHandle === params.sourceHandle
+      );
+      if (existingEdge) {
+        // Optionally alert user or ignore new connection
+        return;
+      }
+
       setEdges((eds) =>
         addEdge(
           {
@@ -72,8 +81,9 @@ function FlowEditor() {
           },
           eds
         )
-      ),
-    [setEdges]
+      );
+    },
+    [edges, setEdges]
   );
 
   const onNodeClick = (_event, node) => setSelectedNode(node);
