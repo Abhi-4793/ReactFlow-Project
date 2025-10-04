@@ -8,6 +8,7 @@ const NODE_TYPES = [
     label: "Message",
     description: "Add a text/message node to your flow.",
   },
+
   // Future types: { type: "decision", icon: "🔀", label: "Decision" }
 ];
 
