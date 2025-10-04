@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 .topBar {
@@ -52,7 +52,7 @@
 .mainContent {
   display: flex;
   flex: 1 1 auto;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 54px);
   position: relative;
 }
@@ -67,8 +67,7 @@
 }
 .sidebar {
   width: 20%;
-  min-width: 220px;
-  max-width: 370px;
+
   height: 100%;
   background: #fff;
   border-left: 2px solid #ececec;

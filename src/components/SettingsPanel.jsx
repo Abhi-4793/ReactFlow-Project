@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../stylesheets/Settings.module.scss";
 import { IoMdArrowRoundBack } from "react-icons/io";
 export default function SettingsPanel({ node, onChange, onClose }) {
   const [value, setValue] = useState(node.data.label);
-
+  const textareaRef = useRef(null);
   useEffect(() => {
     setValue(node.data.label);
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+    }
   }, [node]);
 
   const handleChange = (e) => {
@@ -27,6 +30,7 @@ export default function SettingsPanel({ node, onChange, onClose }) {
         </label>
         <textarea
           id="textField"
+          ref={textareaRef}
           value={value}
           onChange={handleChange}
           rows={4}
