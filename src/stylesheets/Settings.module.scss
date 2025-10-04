@@ -1,0 +1,49 @@
+.panel {
+  width: 100%;
+  background: #fff;
+  border-left: 2px solid #f2f2f2;
+  padding: 24px;
+  z-index: 1;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.closeButton {
+  align-self: flex-end;
+  margin-bottom: 18px;
+  background: none;
+  border: none;
+  color: #4461ea;
+  font-size: 1.3em;
+  cursor: pointer;
+  padding: 0;
+}
+
+.heading {
+  color: #4461ea;
+  margin-top: 10px;
+}
+
+.inputGroup {
+  margin: 20px 0;
+}
+
+.label {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.textarea {
+  width: 100%;
+  padding: 9px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #aac7d2;
+  font-size: 15px;
+  resize: none;
+  font-family: inherit;
+}

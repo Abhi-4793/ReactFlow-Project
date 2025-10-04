@@ -1,0 +1,69 @@
+.node {
+  width: 150px;
+  background: #fff;
+  border: 1px solid #e5e7ea;
+  border-radius: 7px;
+  box-shadow: 0 4px 16px rgba(59, 59, 59, 0.25);
+
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #74fcc3be;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: #29886a;
+  font-weight: 400;
+  font-size: 8px;
+  padding: 2px 6px 2px 6px;
+  border-bottom: 1px solid #e5e7ea;
+  min-height: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  svg {
+    display: block;
+    font-size: 11px;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(40, 180, 85, 0.07);
+  svg {
+    font-size: 9px;
+    color: #25d366;
+    display: block;
+  }
+}
+.selected {
+  border: 2px solid #4461ea !important;
+  box-shadow: 0 4px 16px rgba(68, 97, 234, 0.25);
+}
+.body {
+  padding: 6px 8px 6px 8px;
+  font-size: 10px;
+  color: #274050;
+  min-height: 10px;
+  word-break: break-word;
+}
+
+.handle {
+  background: #34bb8a !important;
+  border-radius: 3px;
+}
